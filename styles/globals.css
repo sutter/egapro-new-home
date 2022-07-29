@@ -1,0 +1,28 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ds_banner {
+  background-color: var(--grey-975);
+}
+
+.ds-link {
+  color: var(--blue-france-113);
+}
+
+.ds-text-xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.ds-text-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+.ds-text-base {
+  font-size: 1rem; /* 16px */
+}
+
+.ds-text-lg {
+  font-size: 1.125rem; /* 18px */
+}
