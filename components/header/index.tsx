@@ -6,28 +6,31 @@ import {
   Service,
   ToolItemGroup,
   Tool,
+  HeaderNav,
+  NavItem,
 } from "@dataesr/react-dsfr"
 
 const Header = () => (
   <DsfrHeader>
     <HeaderBody>
-      <Logo>
-        Ministère du Travail, de l&lsquo;Emploi et de l&lsquo;Insertion
-      </Logo>
+      <Logo>Ministère du travail, du plein l’emploi et de l’insertion</Logo>
       <Service
         title="Egapro"
         description="	Index égalité professionnelle et écarts de représentation femme-homme"
       />
       <Tool>
         <ToolItemGroup>
-          <ToolItem link="/">
-            <span className="fr-fi-user-fill fr-link--icon-left">
-              Me connecter
-            </span>
+          <ToolItem icon="ri-user-fill" link="#">
+            Connexion
           </ToolItem>
         </ToolItemGroup>
       </Tool>
     </HeaderBody>
+    <HeaderNav>
+      <NavItem title="Page d'accueil" link="/" />
+      <NavItem title="Calculer - Déclarer mon index" link="/" />
+      <NavItem title="Déclarer mes Écarts" link="/" />
+    </HeaderNav>
   </DsfrHeader>
 )
 
