@@ -1,14 +1,5 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.ds_banner {
+.bg-grey-975 {
   background-color: var(--grey-975);
-}
-
-.ds-link {
-  color: var(--blue-france-113);
 }
 
 .ds-text-xs {
