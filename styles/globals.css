@@ -1,4 +1,4 @@
-.fr-header__brand.fr-enlarge-link:hover {
+.fr-logo a:active {
   background: transparent !important;
 }
 
@@ -20,4 +20,23 @@
 
 .ds-text-lg {
   font-size: 1.125rem; /* 18px */
+}
+
+.ds-block {
+  display: block;
+}
+
+.ds-mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.ds-alert {
+  position: relative;
+}
+
+.ds-alert__icon {
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
 }

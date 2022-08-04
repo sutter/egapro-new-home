@@ -1,10 +1,5 @@
 import type { NextPage } from "next"
 import {
-  Card,
-  CardTitle,
-  CardDescription,
-  CardFooter,
-  ButtonGroup,
   Col,
   Container,
   Link as DSLink,
@@ -12,6 +7,8 @@ import {
   Text,
   Title,
 } from "@dataesr/react-dsfr"
+import Link from "next/link"
+import Card from "../components/Card"
 
 const Index: NextPage = () => {
   return (
@@ -53,11 +50,15 @@ const Index: NextPage = () => {
         <div className="fr-py-8w">
           <Row gutters>
             <Col n="md-6 12">
-              <Card hasArrow={false} anchorAs="span">
-                <CardTitle as="h2">
-                  Index de l&#39;égalité professionnelle femmes-hommes
-                </CardTitle>
-                <CardDescription as="div">
+              <Card
+                title="Index de l'égalité professionnelle femmes-hommes"
+                action={
+                  <Link href="/index">
+                    <a className="fr-btn">Calculer - Déclarer mon Index</a>
+                  </Link>
+                }
+              >
+                <>
                   <div>
                     Calculer et/ou déclarer votre index de l&#39;égalité
                     professionnelle entre les femmes et les hommes.
@@ -72,22 +73,19 @@ const Index: NextPage = () => {
                       Pour plus d&#39;informations sur l&#39;index Egapro
                     </DSLink>
                   </div>
-                </CardDescription>
-                <CardFooter>
-                  <ButtonGroup isEquisized>
-                    <a href="#" className="fr-btn">
-                      Calculer - Déclarer mon Index
-                    </a>
-                  </ButtonGroup>
-                </CardFooter>
+                </>
               </Card>
             </Col>
             <Col n="md-6 12">
-              <Card hasArrow={false} anchorAs="span">
-                <CardTitle as="h2">
-                  Répartition équilibrée femmes-hommes
-                </CardTitle>
-                <CardDescription as="div">
+              <Card
+                title="Répartition équilibrée femmes-hommes"
+                action={
+                  <Link href="/ecart-rep">
+                    <a className="fr-btn">Déclarer mes Écarts</a>
+                  </Link>
+                }
+              >
+                <>
                   <div>
                     Déclarer vos écarts de représentation entre les femmes et
                     les hommes dans les postes de direction.
@@ -102,14 +100,7 @@ const Index: NextPage = () => {
                       Pour plus d&#39;informations sur la répartition équilibrée
                     </DSLink>
                   </div>
-                </CardDescription>
-                <CardFooter>
-                  <ButtonGroup isEquisized>
-                    <a href="#" className="fr-btn">
-                      Déclarer mes Ecarts
-                    </a>
-                  </ButtonGroup>
-                </CardFooter>
+                </>
               </Card>
             </Col>
           </Row>
