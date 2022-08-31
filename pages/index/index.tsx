@@ -43,6 +43,7 @@ const Index: NextPage = () => {
               <Card
                 detail="Choix 1"
                 title="Calcul et déclaration de l'index"
+                titleTag="h3"
                 action={
                   <a href="#" className="fr-btn">
                     Commencer mon calcul
@@ -60,6 +61,7 @@ const Index: NextPage = () => {
               <Card
                 detail="Choix 2"
                 title="Déclaration directe de l'index"
+                titleTag="h3"
                 action={
                   <a href="#" className="fr-btn">
                     Déclarer directement
